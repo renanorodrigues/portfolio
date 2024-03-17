@@ -1,0 +1,11 @@
+:root {
+  --main-color: #1d1d20;
+  --main-font-family: 'Courier New', monospace;
+}
+
+.main-container {
+  background-color: var(--main-color);
+  font-family: var(--main-font-family);
+  color: white;
+  padding: 20px;
+}
