@@ -1,11 +1,97 @@
+/* Definição das variáveis globais */
 :root {
   --main-color: #1d1d20;
   --main-font-family: 'Courier New', monospace;
+  --logo-width: 26px;
 }
 
-.main-container {
+/* Estilização das principais divs */
+
+.main-style {
   background-color: var(--main-color);
   font-family: var(--main-font-family);
   color: white;
   padding: 20px;
+}
+
+.main-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.centralize-component {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* Estilização dos links de navegação */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+  transform: scale(1.5);
+}
+
+/* Estilização do footer */
+
+.footer-apperance {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+/* Logo com minha letra inicial */
+
+.logo-capitalize {
+  position: relative;
+  width: var(--logo-width);
+  height: var(--logo-width);
+}
+
+.logo-capitalize::before {
+  content: "RR";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: var(--logo-width);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-capitalize:hover::before {
+  transform: scale(1.5);
+}
+
+.logo-link-to-home {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilização do botão de navegação */
+.formation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formation-list ul {
+  padding-top: 16px;
 }
