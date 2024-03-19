@@ -1,0 +1,164 @@
+/* Definição das variáveis globais */
+:root {
+  --main-color: #1d1d20;
+  --main-link-color: #d68944;
+  --main-font-family: 'Courier New', monospace;
+  --logo-width: 26px;
+}
+
+/* Estilização das principais divs */
+
+.main-style {
+  background-color: var(--main-color);
+  font-family: var(--main-font-family);
+  color: white;
+  padding: 20px;
+}
+
+.main-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.centralize-component {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* Estilização dos links de navegação */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+  transform: scale(1.5);
+}
+
+.menu-navigation {
+  position: absolute;
+}
+
+.menu-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-navigation li {
+  margin: 15px 0px;
+}
+
+.menu-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilização do footer */
+
+.footer-apperance {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+/* Logo com minha letra inicial */
+
+.logo-capitalize {
+  position: relative;
+  width: var(--logo-width);
+  height: var(--logo-width);
+}
+
+.logo-capitalize::before {
+  content: "RR";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: var(--logo-width);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-capitalize:hover::before {
+  transform: scale(1.5);
+}
+
+.logo-link-to-home {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilização da lista na página de formação */
+.formation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.formation-list ul {
+  padding-top: 16px;
+}
+
+.formation-list li {
+  font-size: 20px;
+}
+
+/* Estilização do formulário de contato */
+.form-input {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+}
+
+.form-input label {
+  margin-bottom: 16px;
+}
+
+.form-container button {
+  padding: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+/* Estilização do componente card que agrupa os projetos */
+.cardmedia-container {
+  width: 400px;
+  height: 600px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardmedia-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.cardmedia-content {
+  padding: 10px;
+}
+
+.cardmedia-content a {
+  text-decoration: none;
+  color: var(--main-link-color);
+}
