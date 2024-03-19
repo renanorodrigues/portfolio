@@ -1,6 +1,7 @@
 /* Definição das variáveis globais */
 :root {
   --main-color: #1d1d20;
+  --main-link-color: #d68944;
   --main-font-family: 'Courier New', monospace;
   --logo-width: 26px;
 }
@@ -47,6 +48,25 @@
   transform: scale(1.5);
 }
 
+.menu-navigation {
+  position: absolute;
+}
+
+.menu-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-navigation li {
+  margin: 15px 0px;
+}
+
+.menu-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Estilização do footer */
 
 .footer-apperance {
@@ -84,14 +104,61 @@
   color: white;
 }
 
-/* Estilização do botão de navegação */
+/* Estilização da lista na página de formação */
 .formation-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 .formation-list ul {
   padding-top: 16px;
+}
+
+.formation-list li {
+  font-size: 20px;
+}
+
+/* Estilização do formulário de contato */
+.form-input {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+}
+
+.form-input label {
+  margin-bottom: 16px;
+}
+
+.form-container button {
+  padding: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+/* Estilização do componente card que agrupa os projetos */
+.cardmedia-container {
+  width: 400px;
+  height: 600px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardmedia-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.cardmedia-content {
+  padding: 10px;
+}
+
+.cardmedia-content a {
+  text-decoration: none;
+  color: var(--main-link-color);
 }
